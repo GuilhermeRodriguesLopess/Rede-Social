@@ -1,0 +1,159 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #FF8762;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.profile-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.profile p {
+    margin: 10px 0;
+    color: #666;
+}
+
+.receitas,
+.receitas-favoritas {
+    padding: 20px;
+    display: none;
+}
+
+.receitas-favoritas {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.receita,
+.receita-favorita {
+    border: 1px solid #ddd;
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.receita:hover,
+.receita-favorita:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.receita img,
+.receita-favorita img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.receita h3,
+.receita-favorita h3 {
+    margin: 5px 0;
+}
+
+.receita p,
+.receita-favorita p {
+    margin: 3px 0;
+}
+
+.receita,
+.receita-favorita {
+    margin-bottom: 20px;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.tab:hover {
+    background-color: #f4f4f4;
+}
+
+.tab-content {
+    display: none;
+}
+
+
+
+
+
+
+.log {
+background-color: #f44336;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+text-decoration: none;
+display: inline-block;
+margin-top: 10px;
+}
+
+.log:hover {
+background-color: #d32f2f;
+}
+

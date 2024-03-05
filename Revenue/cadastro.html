@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Cadastre-se</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <h1>Tela de Cadastro!</h1>
+    <form method="post" action="cadastro.php" enctype="multipart/form-data">
+        <label for="nome_usuario">Nome de Usuário:</label>
+        <input type="text" name="nome_usuario" id="nome_usuario" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha" required>
+        
+        <label for="descricao_perfil">Descrição do Perfil:</label>
+        <textarea name="descricao_perfil" id="descricao_perfil" required></textarea>
+        
+        <label for="foto_perfil">Foto de Perfil:</label>
+        <input type="file" name="foto_perfil" id="foto_perfil" accept="image/*" required>
+        
+        <input type="submit" value="Registrar">
+        
+    </form>
+    <p>Já possui uma conta? <a href="login.html">Entrar</a></p>
+
+
+</body>
+</html>

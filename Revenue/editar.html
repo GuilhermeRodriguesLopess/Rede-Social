@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="editForm" style="display: none;">
+        <form action="editar_perfil.php" method="post">
+            <label for="nome_usuario">Nome:</label>
+            <input type="text" id="nome_usuario" name="nome_usuario" value="<?php echo htmlspecialchars($row_usuario['nome_usuario']); ?>">
+    
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" value="<?php echo htmlspecialchars($row_usuario['email']); ?>">
+    
+            <label for="descricao_perfil">Descrição:</label>
+            <textarea id="descricao_perfil" name="descricao_perfil"><?php echo htmlspecialchars($row_usuario['descricao_perfil']); ?></textarea>
+    
+            <button type="submit">Salvar</button>
+            <button type="button" onclick="closeEditForm()">Cancelar</button>
+            
+        </form>
+    </div>
+    
+</body>
+</html>
